@@ -1,1 +1,2 @@
-# nook-and-nature
+# Nook & Nature: A Mindful Study Room
+Nook & Nature is a mindful focus dashboard designed to eliminate digital burnout by unifying fragmented workflows into a single sanctuary. It combines a high-contrast Pomodoro timer with an embedded media player and calming nature presets to reduce the cognitive load caused by tab-switching. Through soothing audio alerts, the app encourages intentional breaks to protect eye health and sustain physical energy.
