@@ -1,1 +1,43 @@
+/* 1. THE HIDDEN CLASS */ 
+.hidden {
+    display: none;
+}
 
+/* 2. THE MAIN DASHBOARD */
+#main-container {
+    text-align: center;
+    padding: 50px;
+    font-family: sans-serif;
+}
+
+#timer-display {
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+/* 3. THE SETTINGS MODAL */
+#settings-modal {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100; /* Ensures it stays on top */
+}
+
+/* 4. THE MODAL CONTENT BOX */
+.modal-content {
+    background-color: white;
+    margin: 10% auto; /* Centers it vertically and horizontally */
+    padding: 30px;
+    border: 2px solid #333;
+    width: 300px;
+    text-align: left;
+}
+
+/* 5. BUTTON STYLING */
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
