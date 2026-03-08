@@ -1,6 +1,7 @@
 // 1. SELECTING ALL THE PARTS NEEDED //
 const alertAudio = document.getElementById('alert-audio');
 const alertSelect = document.getElementById('alert-select');
+const bgSelect = document.getElementById('bg-select');
 
 const timerDisplay = document.getElementById('timer-display');
 const timerInput = document.getElementById('timer-input');
@@ -60,6 +61,14 @@ saveSettingsBtn.addEventListener('click', () => {
     } else {
         alert("Please enter a number between 1 and 60.");
     }
+
+    // 1. Remove old backgrounds
+    document.body.classList.remove('forest', 'mountain', 'river');
+    
+    // 2. Add the new background based on selection
+    document.body.classList.add(bgSelect.value);
+    
+    settingsModal.classList.add('hidden');
 });
 
 // 5. TIMER CONTROLS //

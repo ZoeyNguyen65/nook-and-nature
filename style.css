@@ -12,7 +12,12 @@
 
 #timer-display {
     font-size: 80px;
+    color: white;
     margin: 20px 0;
+}
+
+#main-container h1 {
+    color: white;
 }
 
 /* 3. THE SETTINGS MODAL */
@@ -40,4 +45,21 @@
 button {
     padding: 10px 20px;
     cursor: pointer;
+}
+
+/* 6. BACKGROUND CLASSES */
+.forest {
+    background: url('Images/Forest-Rain.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.mountain {
+    background: url('Images/Mountain-Mist.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.river {
+    background: url('Images/River-Serenade.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
