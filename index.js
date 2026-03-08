@@ -1,4 +1,7 @@
 // 1. SELECTING ALL THE PARTS NEEDED //
+const alertAudio = document.getElementById('alert-audio');
+const alertSelect = document.getElementById('alert-select');
+
 const timerDisplay = document.getElementById('timer-display');
 const timerInput = document.getElementById('timer-input');
 const settingsModal = document.getElementById('settings-modal');
@@ -39,10 +42,21 @@ saveSettingsBtn.addEventListener('click', () => {
     const userMinutes = parseInt(timerInput.value); // Get number from input //
     
     if (userMinutes > 0 && userMinutes <= 60) {
+
+        const selectedSound = alertSelect.value;
+        
+        if (selectedSound === 'ding') {
+            alertAudio.src = 'Sounds/Ding sound.mp3';
+        } else if (selectedSound === 'chime') {
+            alertAudio.src = 'Sounds/Glass Chime sound.mp3';
+        } else if (selectedSound === 'bird') {
+            alertAudio.src = 'Sounds/Bird Chirp sound.mp3';
+        }
+
         timeLeft = userMinutes * 60; // Set new time //
         updateDisplay();             // Refresh the screen //
         settingsModal.classList.add('hidden'); // Close the box //
-        console.log("Timer updated to: " + userMinutes + " minutes");
+        
     } else {
         alert("Please enter a number between 1 and 60.");
     }
@@ -59,7 +73,11 @@ startBtn.addEventListener('click', () => {
         if (timeLeft <= 0) {
             clearInterval(timerId);
             timerId = null;
-            alert("Mindful break time!");
+            alertAudio.play();
+            // Use a tiny delay (100ms) for the alert. //
+            setTimeout(() => {
+                alert("Time to rest your eyes!");
+            }, 100);
         }
     }, 1000);
 });
