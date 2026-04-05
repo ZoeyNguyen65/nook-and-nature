@@ -20,6 +20,14 @@
     color: white;
 }
 
+#spotify-card {
+    width: 350px;
+}
+
+iframe {
+   
+}
+
 /* 3. THE SETTINGS MODAL */
 #settings-modal {
     position: fixed; 
