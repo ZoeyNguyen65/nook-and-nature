@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nook & Nature: A tranquil, aesthetic Pomodoro timer and study sanctuary featuring nature backgrounds and integrated music to improve focus.">
   <title>Nook & Nature</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +12,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="mountain">
+<body class="mountain"><main>
     <div id="main-container">
         <div class="container-1">
-            <img src="Images/Nook-&-Nature-logo_white.png" class="dashboard__logo" width="110px">
+            <img src="Images/Nook-&-Nature-logo_white.png" class="dashboard__logo" alt="Nook & Nature - Mindful Study Room Logo" width="110px" height="84.5px">
         </div>
 
         <div class="container-2">
@@ -32,7 +33,8 @@
 
         <div class="container-3">
             <div class="media-player" id="spotify-card">
-                <iframe data-testid="embed-iframe"
+                <iframe title="Spotify Music Player"
+                data-testid="embed-iframe"
                 class="media-player__widget"
                 style="border-radius:20px"
                 src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUKPeBypcpcP?utm_source=generator"
@@ -72,6 +74,6 @@
 
     <audio id="alert-audio"></audio>
     <script src="index.js"></script>
-</body>
+</main></body>
 
 </html>
